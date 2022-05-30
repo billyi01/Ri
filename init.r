@@ -19,7 +19,7 @@ Sys.setenv("_R_USE_PIPEBIND_"=TRUE)
   devtools::source_url()
 
 c("import", "magrittr", "tidyverse", NULL) |> instpkgs()
-rm(instpkgs)
-gc()
+# rm(instpkgs)
+# gc()
   
 import::from(magrittr, "%>%")
