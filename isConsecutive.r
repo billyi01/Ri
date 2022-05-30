@@ -1,8 +1,8 @@
 # a function to check consecutiveness
 
-isConsecutive <- function(vec) {
+isConsecutive <- function(x) {
   
-  tmp <- as.integer(vec)
+  tmp <- as.integer(x)
   tmpLen <- length(tmp)
   tmpMin <- min(tmp)
   tmpMax <- max(tmp)
