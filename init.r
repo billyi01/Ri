@@ -18,7 +18,7 @@ Sys.setenv("_R_USE_PIPEBIND_"=TRUE)
 "https://raw.githubusercontent.com/billyi01/Ri/main/srcUrl.r" %>%
   devtools::source_url()
 
-"instPkg" %>% srcUrl()
+"instPkgs" %>% srcUrl()
 
 c("devtools", "import", "magrittr", "tidyverse", NULL) |> instPkgs()
   
