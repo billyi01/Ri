@@ -15,10 +15,10 @@ gc()
 options(scipen=999)
 Sys.setenv("_R_USE_PIPEBIND_"=TRUE)
 
-"https://raw.githubusercontent.com/billyi01/Ri/main/srcUrl.r" %>%
+"https://raw.githubusercontent.com/billyi01/Ri/main/srcUrl.r" |>
   devtools::source_url()
 
-"instPkgs" %>% srcUrl()
+"instPkgs" |> srcUrl()
 
 c("devtools", "import", "magrittr", "tidyverse", NULL) |> instPkgs()
   
