@@ -15,10 +15,10 @@ gc()
 options(scipen=999)
 Sys.setenv("_R_USE_PIPEBIND_"=TRUE)
 
-"https://raw.githubusercontent.com/billyi01/Ri/main/instpkgs.r" |>
+"https://raw.githubusercontent.com/billyi01/Ri/main/instPkgs.r" |>
   devtools::source_url()
 
-c("import", "magrittr", "tidyverse", NULL) |> instpkgs()
+c("import", "magrittr", "tidyverse", NULL) |> instPkgs()
 # rm(instpkgs)
 # gc()
   
