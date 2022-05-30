@@ -1,0 +1,3 @@
+sRdsFunGen <- function(d = ".") {
+  function(x) saveRDS(object = x, file = paste(d, x, sep = "")
+}
